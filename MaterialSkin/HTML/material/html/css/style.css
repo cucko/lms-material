@@ -4084,6 +4084,7 @@ div.v-subheader {
 .np-html-sect td {
  vertical-align:top;
  padding-bottom:8px;
+ white-space:pre-wrap;
 }
 
 .np-grid-sect {
