@@ -764,7 +764,7 @@ var lmsServer = Vue.component('lms-server', {
                             parseTitleFormat(data.result.titleFormat, data.result.titleFormatWeb);
                         }
                     });
-                } else if (data[2]=="noGenreFilter" || data[2]=="noRoleFilter" || data[2]=="groupdiscs") {
+                } else if (data[2]=="noGenreFilter" || data[2]=="noRoleFilter" || data[2]=="groupdiscs" || data[2]=="noContributorPictures") {
                     lmsOptions[data[2]] = 1==parseInt(data[3]);
                 } else if (data[2]=="variousArtistsString") {
                     lmsOptions[data[2]] = data[3];

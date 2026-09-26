@@ -1,3 +1,10 @@
+6.4.11
+------
+1. Render string/text new line as html break line - thanks to Gorancho
+   Sirkarovski.
+2. Respect LMS 9.1's artist picture setting.
+3. Fix image sizes in SlimBrowse items.
+
 6.4.10
 ------
 1. Fix inconsistent sizing in player icon dialog.

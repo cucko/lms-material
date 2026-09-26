@@ -166,6 +166,7 @@
   my $groupArtistAlbumsByReleaseType=Plugins::MaterialSkin::Plugin->readIntPref('server', 'groupArtistAlbumsByReleaseType', 1);
   my $noGenreFilter=Plugins::MaterialSkin::Plugin->readIntPref('server', 'noGenreFilter', 0);
   my $noRoleFilter=Plugins::MaterialSkin::Plugin->readIntPref('server', 'noRoleFilter', 0);
+  my $noContributorPictures=$lmsVersion>=90100 ? Plugins::MaterialSkin::Plugin->readIntPref('server', 'noContributorPictures', 0) : 0;
   my $browseagelimit=Plugins::MaterialSkin::Plugin->readIntPref('server', 'browseagelimit', 100);
   my $groupdiscs=Plugins::MaterialSkin::Plugin->readIntPref('server', 'groupdiscs', 0);
   my $variousArtistsString=Plugins::MaterialSkin::Plugin->readStringPref('server', 'variousArtistsString', 'Various Artists');
@@ -201,6 +202,7 @@
   print("const LMS_DEF_SRV_EMBLEM=$srvEmblem;");
   print("const LMS_DEF_NO_GENRE_FILTER=$noGenreFilter;");
   print("const LMS_DEF_NO_ROLE_FILTER=$noRoleFilter;");
+  print("const LMS_DEF_NO_CONTRIB_PICS=$noContributorPictures;");
   print("const LMS_NEW_MUSIC_LIMIT=$browseagelimit;");
   print("const LMS_DEF_GROUP_DISCS=$groupdiscs;");
   print("const LMS_DEF_VA_STRING=\"$variousArtistsString\";");
